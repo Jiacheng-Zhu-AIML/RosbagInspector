@@ -1,7 +1,7 @@
 '''
 
 Rosbag Inspector
-Display all the topics and msg to give you a quick idea of one
+Display all the topics and 1 msg per topic to give you a quick idea of one
 
 '''
 import rosbag
@@ -20,6 +20,11 @@ def Rosbag_Inspector(bag, txt_file):
             txt_file.write(str(topic))
             txt_file.write(str(msg))
             break
+
+            # if str(topic) == '/vehicle/imu/data_raw':
+                # txt_file.write(str(msg))
+            # else:
+	        # break
 
 
 if __name__ == "__main__":
